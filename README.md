@@ -14,8 +14,19 @@ Built using **Streamlit**, **Ollama + Llama3.2**, **LangChain**, and **ChromaDB*
 ### 📎 Uploading Document and Indexing
 ![Upload File](screenshots/screenshot_2_upload.png)
 
-### 📂 Showing Stored Documents in ChromaDB
-![ChromaDB Documents](screenshots/screenshot_3_chromadb.png)
+### 🤖 Metamask connected to Remix IDE and deployed contract onchain.
+![Metamask](screenshots/metamask.png)
+
+
+### 🤖 Remix IDE
+![Remix](screenshots/remix.png)
+
+### 🤖 Deployed contract onchain
+![Contract](screenshots/deployedcont.png)
+
+
+### 🤖 Python vector onchain
+![Onchain](screenshots/results.png)
 
 ---
 
@@ -30,6 +41,8 @@ Built using **Streamlit**, **Ollama + Llama3.2**, **LangChain**, and **ChromaDB*
 - ✅ Answers user questions using **RAG (Retrieval-Augmented Generation)**
 - ✅ Saves chat history (Q&A) to `query_log.json`
 - ✅ Button to preview all indexed documents from ChromaDB
+- ✅ Deployed contract onchain. (Metamask)
+- ✅ Python vector onchain. (Metamask)
 
 ---
 
