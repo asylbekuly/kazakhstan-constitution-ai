@@ -19,9 +19,9 @@ if __name__ == "__main__":
     text = load_constitution_text(path)
     chunks = split_text_to_chunks(text)
     print(f"Loaded {len(chunks)} chunks.")
-    print(chunks[:2])  # покажем первые 2 чанка
+    print(chunks[:2])  
 
-    # Работа с ChromaDB
+ 
     store = ConstitutionVectorStore()
     store.add_documents(chunks)
 
