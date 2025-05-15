@@ -68,5 +68,15 @@
     "timestamp": "2025-05-08T17:32:16.450841",
     "question": "can you tell me about freedom?",
     "answer": "According to Article 20, Freedom of expression and creativity shall be guaranteed. Censorship shall be prohibited. This means that in Kazakhstan, citizens have the right to express themselves freely, create, and disseminate their ideas, thoughts, and opinions without fear of censorship or reprisal.\n\nAdditionally, as stated in Article 19, everyone has the right to freedom of economic activity and free use of property for any lawful economic activity. This ensures that individuals have the autonomy to engage in economic pursuits and own property without undue restriction or interference from the government.\n\nIn general, Kazakhstan's Constitution emphasizes the importance of individual freedoms, including freedom of expression, creativity, and economic activity, as well as the right to choose one's nationality, political party, and religious affiliation."
+  },
+  {
+    "timestamp": "2025-05-15T11:27:45.323842",
+    "question": "can you tell me about freedom?",
+    "answer": "\u26a0\ufe0f Error from Ollama: 500\n{\"error\":\"model requires more system memory (2.8 GiB) than is available (2.8 GiB)\"}"
+  },
+  {
+    "timestamp": "2025-05-15T11:30:27.684498",
+    "question": "tell me about the freedom",
+    "answer": "In Kazakhstan, as enshrined in Article 16 of the Constitution, there are several freedoms guaranteed to citizens:\n\n1. **Personal Liberty**: Everyone has the right to personal liberty, which means that individuals have the right to be free from arbitrary detention and arrest.\n2. **Freedom of Economic Activity**: Every citizen has the right to freedom of economic activity and free use of property for any lawful economic activity. This means that individuals are free to engage in any economic activity they choose, as long as it is lawful.\n\n3. **Freedom of Choice**: Everyone has the right to free choice of work, occupation, and profession (Article 24, Part 1). This means that individuals have the freedom to choose their own career path, without any restrictions or coercion.\n\nThese freedoms are absolute and inalienable, meaning they cannot be taken away from citizens. They also determine the content and implementation of laws and other regulatory legal acts."
   }
 ]

@@ -14,18 +14,31 @@ sender_address = w3.eth.accounts[0]
 
 # 3. Добавление вектора
 def add_vector(id: str, content: str, embedding: list[float]):
+    
+    if len(content) > 500:
+        shortened_content = content[:500] + "... (truncated)"
+        print(f"⚠️ Content for {id} truncated due to size limitations")
+    else:
+        shortened_content = content
+      
+    if len(embedding) > 100:  
+        embedding = embedding[:100]  
+        print(f"⚠️ Embedding for {id} truncated to 100 dimensions")
+    
     scaled = [int(x * 1e6) for x in embedding]  # масштабируем для int256
-    tx_hash = contract.functions.addVector(id, content, scaled).transact({'from': sender_address})
-    w3.eth.wait_for_transaction_receipt(tx_hash)
-    print(f"✅ Vector {id} added to blockchain.")
+    try:
+        tx_hash = contract.functions.addVector(id, shortened_content, scaled).transact({'from': sender_address, 'gas': 6000000})
+        w3.eth.wait_for_transaction_receipt(tx_hash)
+        print(f"✅ Vector {id} added to blockchain.")
+    except Exception as e:
+        print(f"⚠️ Не удалось сохранить {id} в блокчейн: {e}")
 
-# 4. Получение вектора
 def get_vector(id: str):
     content, scaled = contract.functions.getVector(id).call()
     embedding = [x / 1e6 for x in scaled]
     return content, embedding
 
-# 5. Получение только embedding
+
 def get_embedding(id: str):
     scaled = contract.functions.getEmbedding(id).call()
     return [x / 1e6 for x in scaled]
