@@ -25,7 +25,7 @@ def add_vector(id: str, content: str, embedding: list[float]):
         embedding = embedding[:100]  
         print(f"⚠️ Embedding for {id} truncated to 100 dimensions")
     
-    scaled = [int(x * 1e6) for x in embedding]  # масштабируем для int256
+    scaled = [int(x * 1e6) for x in embedding]  
     try:
         tx_hash = contract.functions.addVector(id, shortened_content, scaled).transact({'from': sender_address, 'gas': 6000000})
         w3.eth.wait_for_transaction_receipt(tx_hash)
